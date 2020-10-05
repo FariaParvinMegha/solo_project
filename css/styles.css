@@ -1,7 +1,7 @@
 /* defaults */
 /* fonts: "Raleway" & "Open Sans" */
 /*colors:
-    moon yello: #f4c613
+    moon yellow: #f4c613
     grey: #212226
     white smoke: #f4f4f4
     white: #fff
@@ -158,12 +158,23 @@ section {
     color: #fff;
     border: 1px solid #fff;
 }
+.btn-yellow {
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #f4c613;
+}
 
 .btn-home:hover,
-.btn-home:focus {
+.btn-home:focus{
     color: #fff;
     background-color: #f4c613;
     border: 1px solid #f4c613;
+}
+.btn-yellow:hover,
+.btn-yellow:focus {
+    color: #fff;
+    background-color: #212226;
+    border: 1px solid #212226;
 }
 
 
@@ -450,7 +461,6 @@ ul.social-list li:nth-child(3) a:hover {
 .progress {
     height: 25px;
     border-radius: 0;
-    ;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -ms-border-radius: 0;
@@ -552,4 +562,59 @@ ul.social-list li:nth-child(3) a:hover {
 
 .service p {
     line-height: normal;
+}
+
+
+
+/* services 2  responsive tabs */
+#services-2{
+    background-color: #f4f4f4;
+}
+#services-tabs ul{
+margin-bottom: 40px;
+}
+#services-tabs ul li{
+    padding: 5px 30px;
+}
+#services-tabs ul li a{
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    color: #212226;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0;
+    text-decoration: none;
+}
+/* tab active state */
+#services-tabs ul li.r-tabs-state-active a{
+    color: #f4c613;
+    font-weight: 700;
+    border-bottom: 2px solid #f4c613;
+    padding-bottom: 5px;
+}
+.service-tab .col-md-6{
+    padding: 0;
+}
+.service-tab img{
+    width: 100%;
+    margin: 0 auto;
+}
+.service-tab .tab-bg{
+    background: #fff;
+    padding: 60px 30px;
+    min-height: 470px;
+}
+.service-tab h2{
+    font-size: 48px;
+    color: #bbb;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+.service-tab h3{
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.service-tab p{
+    line-height: 24px;
+    margin-bottom: 30px;
 }

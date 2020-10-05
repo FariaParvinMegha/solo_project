@@ -7,7 +7,7 @@ $(window).on('load', function () {
 
 // team///////////
 $(function () {
-    $("#team-members").owlCarousel({
+    $(".owl-carousel").owlCarousel({
         items: 2,
         autoplay: true,
         autoplayTimeout: 3000,
@@ -31,5 +31,13 @@ $(function () {
         this.destroy();
     }, {
         offset: 'bottom-in-view'
+    });
+});
+
+
+// responsive tabs//////////////
+$(function () {
+    $('#services-tabs').responsiveTabs({
+        animation: 'slide'
     });
 });
