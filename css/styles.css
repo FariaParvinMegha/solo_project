@@ -10,9 +10,6 @@
     black: #000 */
 
 @import url("http://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@100;200;300;400;500;600;700");
-
-
-
 /* generic css */
 
 html, body {
@@ -39,8 +36,6 @@ section {
     overflow: hidden;
 }
 
-
-
 /* preloader */
 
 #preloader {
@@ -64,8 +59,6 @@ section {
     margin-top: -35px;
     margin-left: -35px;
 }
-
-
 
 /* Home */
 
@@ -134,8 +127,6 @@ section {
     margin: 8px 0 30px 0;
 }
 
-
-
 /* buttons */
 
 .btn-general {
@@ -179,8 +170,6 @@ section {
     border: 1px solid #212226;
 }
 
-
-
 /* Arrow-down */
 
 #arrow-down {
@@ -200,8 +189,6 @@ section {
     color: #f4c613;
 }
 
-
-
 /* content-box */
 
 .content-box-lg {
@@ -211,8 +198,6 @@ section {
 .content-box-md {
     padding: 100px 0;
 }
-
-
 
 /* vertical & horizontal - heading */
 
@@ -256,8 +241,6 @@ section {
     margin: 0;
 }
 
-
-
 /* about-1 */
 
 .about-right p:first-child {
@@ -271,8 +254,6 @@ section {
 .about-bottom img {
     margin: 0 auto;
 }
-
-
 
 /* about-2 */
 
@@ -309,8 +290,6 @@ section {
     margin-top: 20px;
 }
 
-
-
 /* hover-state */
 
 .about-item:hover {
@@ -338,8 +317,6 @@ section {
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
 }
-
-
 
 /* team */
 
@@ -388,8 +365,6 @@ section {
     opacity: 1;
 }
 
-
-
 /* social icons */
 
 ul.social-list {
@@ -437,8 +412,6 @@ ul.social-list li:nth-child(3) a:hover {
     border-color: transparent;
 }
 
-
-
 /* slider buttons */
 
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
@@ -450,8 +423,6 @@ ul.social-list li:nth-child(3) a:hover {
     background: none;
     color: #212226;
 }
-
-
 
 /* Skills */
 
@@ -493,8 +464,6 @@ ul.social-list li:nth-child(3) a:hover {
     top: -25px;
 } */
 
-
-
 /* statement */
 
 #statement {
@@ -520,8 +489,6 @@ ul.social-list li:nth-child(3) a:hover {
     font-style: "Raleway", sans-serif;
     margin-top: 10px;
 }
-
-
 
 /* services 01 */
 
@@ -572,8 +539,6 @@ ul.social-list li:nth-child(3) a:hover {
     line-height: normal;
 }
 
-
-
 /* services 2  responsive tabs */
 
 #services-2 {
@@ -597,8 +562,6 @@ ul.social-list li:nth-child(3) a:hover {
     padding: 0;
     text-decoration: none;
 }
-
-
 
 /* tab active state */
 
@@ -641,9 +604,11 @@ ul.social-list li:nth-child(3) a:hover {
     margin-bottom: 30px;
 }
 
-
-
 /* portfolio */
+
+#portfolio {
+    padding-bottom: 160px
+}
 
 #portfolio .vertical-heading {
     margin-bottom: 50px;
@@ -657,8 +622,6 @@ ul.social-list li:nth-child(3) a:hover {
     overflow: hidden;
     position: relative;
 }
-
-
 
 /* Filters */
 
@@ -686,8 +649,6 @@ ul.social-list li:nth-child(3) a:hover {
     border-bottom: 2px solid #f4c613
 }
 
-
-
 /* zoom effect */
 
 .portfolio-item img {
@@ -706,8 +667,6 @@ ul.social-list li:nth-child(3) a:hover {
     -o-transform: scale(1.1);
 }
 
-
-
 /* overlay effect */
 
 .portfolio-item-overlay {
@@ -725,8 +684,6 @@ ul.social-list li:nth-child(3) a:hover {
     -ms-transition: all .5s ease;
     -o-transition: all .5s ease;
 }
-
-
 
 /* items details effect */
 
@@ -787,8 +744,6 @@ ul.social-list li:nth-child(3) a:hover {
     -o-transition: all .5s;
 }
 
-
-
 /* show overlay on hover */
 
 .portfolio-item:hover .portfolio-item-details h3 {
@@ -809,4 +764,70 @@ ul.social-list li:nth-child(3) a:hover {
 
 .portfolio-item:hover .portfolio-item-overlay {
     opacity: 1;
+}
+
+/* testimonials */
+
+#testimonials {
+    background: #f4f4f4;
+    padding-bottom: 45px;
+    overflow: visible;
+}
+
+#testimonials .vertical-heading {
+    padding: 80px 0;
+    margin-bottom: 50px;
+}
+
+#testimonial-slider {
+    background: #f4c613;
+    top: -120px;
+    border-radius: 1%;
+    -webkit-border-radius: 1%;
+    -moz-border-radius: 1%;
+    -ms-border-radius: 1%;
+    -o-border-radius: 1%;
+}
+
+.testimonial {
+    padding: 20px 45px 0 45px;
+    color: #fff
+}
+
+.testimonial .row{
+    margin-bottom: 25px;
+}
+
+.testimonial h3 {
+    font-size: 32px;
+    line-height: 35px;
+}
+
+.testimonial .stars {
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+}
+
+.testimonial p {
+    line-height: normal;
+    margin: 5px 0 20px 0;
+}
+
+.author img {
+    border-radius: 50%;
+    ;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.author .author-name-des {
+    width: 106px;
+    margin-top: 25px;
+    text-align: left;
+}
+
+.author .author-name-des p {
+    margin: 0;
 }
