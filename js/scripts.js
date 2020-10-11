@@ -5,7 +5,7 @@ $(window).on('load', function () {
 });
 
 
-// team///////////
+// team//////////////
 $(function () {
     $("#team-members").owlCarousel({
         items: 2,
@@ -20,7 +20,7 @@ $(function () {
 });
 
 
-// progress bars/////////
+// progress bars////////////
 $(function () {
     $("#progress-elements").waypoint(function () {
         $(".progress-bar").each(function () {
