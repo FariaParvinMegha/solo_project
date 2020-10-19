@@ -91,3 +91,27 @@ $(function () {
         dots: false
     });
 });
+
+
+// statistics//////////////
+$(function () {
+    $(".counter").counterUp({
+        delay: 10,
+        time: 2000
+    });
+});
+
+
+// clients/////////////
+$(function () {
+    $("#clients-list").owlCarousel({
+        items: 6,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        smartSpeed: 700,
+        loop: true,
+        autoplayHoverPause: true,
+        nav: true,
+        dots: false
+    });
+});
