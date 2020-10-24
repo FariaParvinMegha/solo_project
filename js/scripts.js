@@ -10,7 +10,7 @@ $(function () {
     $("#team-members").owlCarousel({
         items: 2,
         autoplay: true,
-        autoplayTimeout: 3000,
+        autoplayTimeout: 2000,
         smartSpeed: 700,
         loop: true,
         autoplayHoverPause: true,
@@ -113,5 +113,38 @@ $(function () {
         autoplayHoverPause: true,
         nav: true,
         dots: false
+    });
+});
+
+
+// navigation/////////////
+
+// show&hide nav///
+$(function () {
+    showNhidenav();
+    $(window).on("scroll", function () {
+        showNhidenav();
+    });
+    function showNhidenav() {
+        if ($(window).scrollTop() > 70) {
+            $("nav").addClass("white-nav-top");
+            $(".navbar-brand img").attr("src", "assets/images/logo/logo-dark.png");
+            $("#back-to-top").fadeIn();
+        } else {
+            $("nav").removeClass("white-nav-top");
+            $(".navbar-brand img").attr("src", "assets/images/logo/logo.png");
+            $("#back-to-top").fadeOut();
+        }
+    }
+});
+
+// scrolling/////
+$(function () {
+    $("a.smooth-scroll").on("click", function (event) {
+        event.preventDefault();
+        var section_id = $(this).attr("href");
+        $("html, body").animate({
+            scrollTop: $(section_id).offset().top - 64
+        }, 1250, "easeInOutExpo");
     });
 });

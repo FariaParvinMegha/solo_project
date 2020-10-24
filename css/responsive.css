@@ -1,0 +1,153 @@
+/* media queries */
+
+/* large Devices */
+@media (min-width: 992px) and (max-width: 1200px){
+    .vertical-heading h2{
+        font-size: 29px;
+    }
+    #services-tabs .tab-bg{
+        padding: 16px 30px;
+        min-height: 395px
+    }
+    .service-tab p{
+        line-height: 20px;
+    }
+}
+/* medium Devices */
+@media (min-width:768px) and (max-width:991px){
+    #site-nav-wrapper{
+        padding: 0 15px;
+    }
+    #home-heading h1{
+        font-size: 42px;
+    }
+    #home-text p{
+        font-size: 13px;
+    }
+    .btn-general{
+        padding: 8px 35px;
+        font-size: 10px;
+    }
+    .vertical-heading h2{
+        font-size: 29px;
+    }
+    #team .vertical-heading{
+        min-height: 130px;
+    }
+    #tech-statement h3{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    #services1 .service{
+        margin: 17px 0;
+    }
+    #services1 img {
+    margin: 200px 0;
+    }
+    .r-tabs-accordion-title{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .r-tabs-accordion-title a{
+        font-family: "Raleway", sans-serif;
+        font-size: 13px;
+        color: #212226;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        text-decoration: none;
+    }
+    .r-tabs-state-active a {
+        color: #f4c613;
+        font-weight: 700;
+        border-bottom: 2px solid #f4c613;
+        padding-bottom: 5px;
+    }
+    .pricing-table .price h2{
+        margin: 0 0 0 6px;
+        font-size: 35px
+    }
+    .blog-post .post-meta p{
+        line-height: 14px;
+    }
+    ul.office-details li i{
+    width: 25px;
+    }
+    ul.office-details li{
+        margin-right: 15px
+    }
+
+}
+/* extra-small and small Devices */
+@media (max-width:767px){
+
+    /* home */
+    #home-heading h1{
+        font-size: 29px;
+    }
+    #home-text p{
+        font-size: 13px;
+        line-height: 18px;
+        margin: 8px 2px 30px 2px;
+    }
+    .btn-general{
+        padding: 8px 25px;
+        font-size: 10px;
+    }
+
+    /* about */
+    /* about-1 */
+    .content-box-lg{
+        padding: 90px 0;
+    }
+    .vertical-heading{
+        text-align: center;
+    }
+    .vertical-heading h5{
+        transform: rotateY(0);
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+        -ms-transform: rotateY(0);
+        -o-transform: rotateY(0);
+        display: block;
+        position: static;
+        margin-bottom: 15px;
+    }
+    .vertical-heading h2{
+        font-size: 29px;
+        line-height: normal;
+        margin: 0;
+    }
+    .about-left{
+        margin-bottom: 50px;
+    }
+    .about-right{
+        text-align: center;
+    }
+    /* about-2 */
+    .content-box-md{
+        padding: 70px 0;
+    }
+    .about-item{
+        padding: 55px 30px;
+        margin-bottom: 35px;
+    }
+    .about-item i{
+        font-size: 30px;
+    }
+    .about-item h3{
+        font-size: 18px;
+    }
+    #team .vertical-heading{
+        min-height: 130px;
+    }
+    .skill h4{
+        font-size: 14px;
+        line-height: 35px;
+    }
+    #tech-statement h3{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+} 

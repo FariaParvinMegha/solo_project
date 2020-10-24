@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="node_modules/responsive-tabs/css/responsive-tabs.css">
     <link rel="stylesheet" href="node_modules/magnific-popup/dist/magnific-popup.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <!-- <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"> -->
     <script src="https://kit.fontawesome.com/36759a890d.js" crossorigin="anonymous"></script>
 
@@ -22,13 +23,38 @@
     <link rel="shortcut icon" href="assets/images/favicon/favicon.ico">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="65">
     <!-- preloader -->
     <div id="preloader">
         <div id="status">
             &nbsp;
         </div>
     </div>
+
+
+    <!-- header-nav -->
+    <header>
+        <nav class="navbar  navbar-expand-md fixed-top">
+            <div class="container-fluid" id="site-nav-wrapper">
+                <!-- logo -->
+                <a href="#home" class="navbar-brand smooth-scroll"><img src="assets/images/logo/logo.png"
+                        alt="logo"></a>
+                <!-- navigation links -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item"><a class="nav-link smooth-scroll" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link smooth-scroll" href="#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link smooth-scroll" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Work</a></li>
+                        <li class="nav-item"><a class="nav-link smooth-scroll" href="#blog">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
 
     <!-- Home -->
     <section id="home">
@@ -54,13 +80,14 @@
                         Neque distinctio velit, nesciunt provident fuga quae</p>
                 </div>
                 <div id="home-btn">
-                    <a class="btn btn-general btn-home" role="button" href="#about" title="Start Now">Start Now</a>
+                    <a class="btn btn-general btn-home smooth-scroll" role="button" href="#about"
+                        title="Start Now">Start Now</a>
                 </div>
             </div>
         </div>
 
         <!-- arrow-down -->
-        <a href="#about" id="arrow-down"><i class="fa fa-angle-down"></i></a>
+        <a href="#about" class="smooth-scroll" id="arrow-down"><i class="fa fa-angle-down"></i></a>
 
     </section>
 
@@ -75,7 +102,7 @@
                     <div class="row">
 
                         <!-- about-left -->
-                        <div class="col-md-6">
+                        <div class="col-lg-6 col-md-6">
                             <div class="about-left">
                                 <div class="vertical-heading">
                                     <h5>Who We Are</h5>
@@ -85,7 +112,7 @@
                         </div>
 
                         <!-- about-right -->
-                        <div class="col-md-6">
+                        <div class="col-lg-6 col-md-6">
                             <div class="about-right">
                                 <p>
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -120,7 +147,7 @@
             <div class="content-box-md">.
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-lg-4 col-md-4">
                             <div class="about-item text-center">
                                 <i class="fa fa-rocket"></i>
                                 <h3>Mission</h3>
@@ -130,7 +157,7 @@
                                     autem reiciendis vero in.</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-lg-4 col-md-4">
                             <div class="about-item text-center">
                                 <i class="fa fa-eye"></i>
                                 <h3>Vision</h3>
@@ -141,7 +168,7 @@
 
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-lg-4 col-md-4">
                             <div class="about-item text-center">
                                 <i class="fa fa-pencil"></i>
                                 <h3>Passion</h3>
@@ -171,21 +198,21 @@
                 <div class="row">
 
                     <!-- left side -->
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-6">
                         <div id="team-left">
                             <div class="vertical-heading">
                                 <h5>who we are</h5>
                                 <h2>Meet Our<br><strong>Talented</strong> Team</h2>
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Soluta itaque perferendis sunt aut. Pariatur, esse in?
-                                Quae laboriosam repudiandae odit totam. Lorem ipsum,
-                                dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Ad doloribus eligendi natus tenetur maxime recusandae voluptate, 
+                                suscipit, illo quam aperiam harum commodi facere voluptas? 
+                                Odio culpa dignissimos natus repudiandae iste.</p>
                         </div>
                     </div>
 
                     <!-- right side -->
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-6">
                         <div id="team-members" class="owl-carousel owl-theme">
 
                             <!-- member1 -->
@@ -204,6 +231,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <!-- member2 -->
                             <div class="team-member">
                                 <img src="assets/images/team/team-2.jpg" alt="team-member" class="img-fluid">
@@ -220,6 +248,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <!-- member3 -->
                             <div class="team-member">
                                 <img src="assets/images/team/team-3.jpg" alt="team-member" class="img-fluid">
@@ -236,6 +265,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <!-- member4 -->
                             <div class="team-member">
                                 <img src="assets/images/team/team-4.jpg" alt="team-member" class="img-fluid">
@@ -252,6 +282,7 @@
                                     </div>
                                 </div>
                             </div>
+                            
                             <!-- member5 -->
                             <div class="team-member">
                                 <img src="assets/images/team/team-5.jpg" alt="team-member" class="img-fluid">
@@ -268,6 +299,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <!-- member6 -->
                             <div class="team-member">
                                 <img src="assets/images/team/team-6.jpg" alt="team-member" class="img-fluid">
@@ -284,12 +316,13 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
 
+                <!-- progress bars -->
                 <div id="progress-elements">
-                    <!-- progress bars -->
                     <div class="row">
 
                         <!-- skill-1 -->
@@ -335,8 +368,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
 
             </div>
@@ -351,13 +384,13 @@
         <div class="content-box-lg">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-lg-12">
                         <div id="tech-statement" class="text-center">
                             <h3><i class="fa fa-quote-left"></i> We design and develop services for customers of all
                                 sizes,<br>
                                 specializing in modern ad stylish websites and online stores.
                                 <i class="fa fa-quote-right"></i></h3>
-                            <p>-Daniel Watros</p>
+                            <p>-Daniel Watrous</p>
                         </div>
                     </div>
                 </div>
@@ -374,8 +407,9 @@
             <div class="content-box-lg">
                 <div class="container">
 
+                    <!-- header -->
                     <div class="row">
-                        <div class="col-md-12 text-center">
+                        <div class="col-lg-12 text-center">
                             <div class="horizontal-heading">
                                 <h5>Who We Do</h5>
                                 <h2>Our Services</h2>
@@ -384,71 +418,73 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-7">
+                        <div class="col-lg-7 col-md-7">
                             <img src="assets/images/services/laptop-lamp.png" alt="laptop" class="img-fluid">
                         </div>
 
-                        <div class="col-md-5">
+                        <div class="col-lg-5 col-md-5">
 
-                            <!-- service-1 -->
-                            <div class="service">
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <div class="icon text-right">
-                                            <i class="fa fa-paint-brush"></i>
+                                <!-- service-1 -->
+                                    <div class="service">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2">
+                                                <div class="icon text-right">
+                                                    <i class="fa fa-paint-brush"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-10 col-md-10">
+                                                <h5>Service 01</h5>
+                                                <h4>Web Design</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                    Consectetur exercitationem numquam excepturi?
+                                                    Soluta fuga voluptates voluptatibus repellat iusto corporis.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-10">
-                                        <h5>Service 01</h5>
-                                        <h4>Web Design</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Consectetur exercitationem numquam excepturi?
-                                            Soluta fuga voluptates voluptatibus repellat iusto corporis.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <!-- service-2 -->
-                            <div class="service">
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <div class="icon text-right">
-                                            <i class="fa fa-laptop"></i>
+                                <!-- service-2 -->
+                                    <div class="service">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2">
+                                                <div class="icon text-right">
+                                                    <i class="fa fa-laptop"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-10 col-md-10">
+                                                <h5>Service 02</h5>
+                                                <h4>Web Development</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                    Consectetur exercitationem numquam excepturi?
+                                                    Soluta fuga voluptates voluptatibus repellat iusto corporis.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-10">
-                                        <h5>Service 02</h5>
-                                        <h4>Web Development</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Consectetur exercitationem numquam excepturi?
-                                            Soluta fuga voluptates voluptatibus repellat iusto corporis.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <!-- service-3 -->
-                            <div class="service">
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <div class="icon text-right">
-                                            <i class="fa fa-paper-plane"></i>
+                                <!-- service-3 -->
+
+                                    <div class="service">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2">
+                                                <div class="icon text-right">
+                                                    <i class="fa fa-paper-plane"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-10 col-md-10">
+                                                <h5>Service 03</h5>
+                                                <h4>Digital Marketing</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                    Consectetur exercitationem numquam excepturi?
+                                                    Soluta fuga voluptates voluptatibus repellat iusto corporis.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-10">
-                                        <h5>Service 03</h5>
-                                        <h4>Digital Marketing</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Consectetur exercitationem numquam excepturi?
-                                            Soluta fuga voluptates voluptatibus repellat iusto corporis.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
 
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -468,10 +504,10 @@
                     <div id="services-tab-1" class="service-tab">
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <img src="assets/images/services/service-tab-img-01.jpg" alt="Creativity">
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <div class="tab-bg">
                                         <h2>01</h2>
                                         <h3>Get More From Life With Creativity</h3>
@@ -493,10 +529,10 @@
                     <div id="services-tab-2" class="service-tab">
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <img src="assets/images/services/service-tab-img-02.jpg" alt="Creativity">
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <div class="tab-bg">
                                         <h2>02</h2>
                                         <h3>The Home of Strategy</h3>
@@ -518,10 +554,10 @@
                     <div id="services-tab-3" class="service-tab">
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <img src="assets/images/services/service-tab-img-03.jpg" alt="Creativity">
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <div class="tab-bg">
                                         <h2>03</h2>
                                         <h3>Design to Play It Safe</h3>
@@ -543,10 +579,10 @@
                     <div id="services-tab-4" class="service-tab">
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <img src="assets/images/services/service-tab-img-04.jpg" alt="Creativity">
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <div class="tab-bg">
                                         <h2>04</h2>
                                         <h3>From Our Development to Yours</h3>
@@ -577,7 +613,8 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-md-12">
+                    <!-- header -->
+                    <div class="col-lg-12">
                         <div class="vertical-heading">
                             <h5>Find Out Work</h5>
                             <h2>Our<br>Amazing <strong>Work</strong></h2>
@@ -585,7 +622,7 @@
                     </div>
 
                     <!-- portfolio-items-filters -->
-                    <div class="col-md-12">
+                    <div class="col-lg-12">
                         <div id="isotope-filters">
                             <button class="btn active" data-filter="*"><span>All</span></button>
                             <button class="btn" data-filter=".logo"><span>Logo</span></button>
@@ -603,7 +640,7 @@
                     <div class="row no-gutters isotope-container">
 
                         <!-- portfolio-item-1 -->
-                        <div class="col-md-3 desktop">
+                        <div class="col-md-3 col-6 desktop">
                             <div class="portfolio-item">
                                 <a href="assets/images/portfolio/001.jpg">
                                     <img src="assets/images/portfolio/001.jpg" alt="portfolio-1" class="img-fluid">
@@ -622,7 +659,7 @@
                         </div>
 
                         <!-- portfolio-item-2 -->
-                        <div class="col-md-3 web">
+                        <div class="col-md-3 col-6 web">
                             <div class="portfolio-item">
                                 <a href="assets/images/portfolio/002.jpg">
                                     <img src="assets/images/portfolio/002.jpg" alt="portfolio-1" class="img-fluid">
@@ -641,7 +678,7 @@
                         </div>
 
                         <!-- portfolio-item-3 -->
-                        <div class="col-md-3 web mobile logo">
+                        <div class="col-md-3 col-6 web mobile logo">
                             <div class="portfolio-item">
                                 <a href="assets/images/portfolio/003.jpg">
                                     <img src="assets/images/portfolio/003.jpg" alt="portfolio-1" class="img-fluid">
@@ -660,7 +697,7 @@
                         </div>
 
                         <!-- portfolio-item-4 -->
-                        <div class="col-md-3 logo web">
+                        <div class="col-md-3 col-6 logo web">
                             <div class="portfolio-item">
                                 <a href="assets/images/portfolio/004.jpg">
                                     <img src="assets/images/portfolio/004.jpg" alt="portfolio-1" class="img-fluid">
@@ -679,7 +716,7 @@
                         </div>
 
                         <!-- portfolio-item-5 -->
-                        <div class="col-md-3 web">
+                        <div class="col-md-3 col-6 web">
                             <div class="portfolio-item">
                                 <a href="assets/images/portfolio/005.jpg">
                                     <img src="assets/images/portfolio/005.jpg" alt="portfolio-1" class="img-fluid">
@@ -698,7 +735,7 @@
                         </div>
 
                         <!-- portfolio-item-6 -->
-                        <div class="col-md-3 logo desktop">
+                        <div class="col-md-3 col-6 logo desktop">
                             <div class="portfolio-item">
                                 <a href="assets/images/portfolio/006.jpg">
                                     <img src="assets/images/portfolio/006.jpg" alt="portfolio-1" class="img-fluid">
@@ -717,7 +754,7 @@
                         </div>
 
                         <!-- portfolio-item-7 -->
-                        <div class="col-md-3 web mobile">
+                        <div class="col-md-3 col-6 web mobile">
                             <div class="portfolio-item">
                                 <a href="assets/images/portfolio/007.jpg">
                                     <img src="assets/images/portfolio/007.jpg" alt="portfolio-1" class="img-fluid">
@@ -736,7 +773,7 @@
                         </div>
 
                         <!-- portfolio-item-8 -->
-                        <div class="col-md-3 web mobile">
+                        <div class="col-md-3 col-6 web mobile">
                             <div class="portfolio-item">
                                 <a href="assets/images/portfolio/008.jpg">
                                     <img src="assets/images/portfolio/008.jpg" alt="portfolio-1" class="img-fluid">
@@ -768,7 +805,7 @@
             <div class="row">
 
                 <!-- left side -->
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-4">
                     <div class="vertical-heading">
                         <h5>Who We Are</h5>
                         <h2>What Our<br><strong>Customers</strong> Say</h2>
@@ -776,16 +813,16 @@
                 </div>
 
                 <!-- right side -->
-                <div class="col-md-8">
+                <div class="col-lg-8 col-md-8">
                     <div id="testimonial-slider" class="owl-carousel owl-theme">
 
                         <!-- testimonial-1 -->
                         <div class="testimonial">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-lg-6 col-md-6 col-6">
                                     <h3>Quality Support</h3>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-lg-6 col-md-6 col-6">
                                     <div class="stars text-right">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -801,11 +838,11 @@
                                 Aperiam, ipsa ducimus delectus perspiciatis quisquam laudantium nobis?</p>
                             <div class="author">
                                 <div class="row">
-                                    <div class="col-md-2">
+                                    <div class="col-lg-2 col-md-3 col-6">
                                         <img src="assets/images/testimonial/client-1.jpg" alt="client"
                                             class="img-fluid">
                                     </div>
-                                    <div class="col-md-10">
+                                    <div class="col-lg-10 col-md-9 col-6">
                                         <div class="author-name-des">
                                             <p>John Martin</p>
                                             <p>Senior Developer</p>
@@ -818,10 +855,10 @@
                         <!-- testimonial-2 -->
                         <div class="testimonial">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-lg-6 col-md-6 col-6">
                                     <h3>Quality Support</h3>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-lg-6 col-md-6 col-6">
                                     <div class="stars text-right">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -837,11 +874,11 @@
                                 Aperiam, ipsa ducimus delectus perspiciatis quisquam laudantium nobis?</p>
                             <div class="author">
                                 <div class="row">
-                                    <div class="col-md-2">
+                                    <div class="col-lg-2 col-md-3  col-6">
                                         <img src="assets/images/testimonial/client-2.jpg" alt="client"
                                             class="img-fluid">
                                     </div>
-                                    <div class="col-md-10">
+                                    <div class="col-lg-10 col-md-9  col-6">
                                         <div class="author-name-des">
                                             <p>John Martin</p>
                                             <p>Senior Developer</p>
@@ -854,10 +891,10 @@
                         <!-- testimonial-3 -->
                         <div class="testimonial">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-lg-6 col-md-6 col-6">
                                     <h3>Quality Support</h3>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-lg-6 col-md-6 col-6">
                                     <div class="stars text-right">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -873,11 +910,11 @@
                                 Aperiam, ipsa ducimus delectus perspiciatis quisquam laudantium nobis?</p>
                             <div class="author">
                                 <div class="row">
-                                    <div class="col-md-2">
+                                    <div class="col-lg-2 col-md-3 col-6">
                                         <img src="assets/images/testimonial/client-3.jpg" alt="client"
                                             class="img-fluid">
                                     </div>
-                                    <div class="col-md-10">
+                                    <div class="col-lg-10 col-md-9 col-6">
                                         <div class="author-name-des">
                                             <p>John Martin</p>
                                             <p>Senior Developer</p>
@@ -902,7 +939,7 @@
             <div class="container">
                 <!-- header -->
                 <div class="row">
-                    <div class="col-md-12 text-center">
+                    <div class="col-lg-12 text-center">
                         <div class="horizontal-heading">
                             <h5>Our Customers</h5>
                             <h2>Our Pricing</h2>
@@ -911,18 +948,19 @@
                 </div>
 
                 <div class="row">
+
                     <!-- fist pricing table -->
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-4">
                         <div class="pricing-table">
                             <div class="type">
                                 <h4>Basic</h4>
                             </div>
                             <div class="price">
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-lg-4 col-md-4 col-4">
                                         <h2><span class="dollar">&#36;</span>29<br><span class="month">Month</span></h2>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-lg-8 col-md-8 col-8">
                                         <p>You will get these awesome services with this great price. Get it now!</p>
                                     </div>
                                 </div>
@@ -943,17 +981,17 @@
                     </div>
 
                     <!-- second pricing table -->
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-4">
                         <div class="pricing-table black">
                             <div class="type">
                                 <h4>Unlimited</h4>
                             </div>
                             <div class="price">
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-lg-4 col-md-4 col-4">
                                         <h2><span class="dollar">&#36;</span>57<br><span class="month">Month</span></h2>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-lg-8 col-md-8 col-8">
                                         <p>You will get these awesome services with this great price. Get it now!</p>
                                     </div>
                                 </div>
@@ -974,17 +1012,17 @@
                     </div>
 
                     <!-- third pricing table -->
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-4">
                         <div class="pricing-table">
                             <div class="type">
                                 <h4>Professional</h4>
                             </div>
                             <div class="price">
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-lg-4 col-md-4 col-4">
                                         <h2><span class="dollar">&#36;</span>96<br><span class="month">Month</span></h2>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-lg-8 col-md-8 col-8">
                                         <p>You will get these awesome services with this great price. Get it now!</p>
                                     </div>
                                 </div>
@@ -1004,6 +1042,7 @@
 
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -1017,7 +1056,7 @@
             <div class="container">
 
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-lg-12">
                         <div class="vertical-heading">
                             <h5>Fun Facts</h5>
                             <h2>We Deliver<br><strong>Excellent</strong> Services</h2>
@@ -1028,7 +1067,7 @@
                 <div class="row">
 
                     <!-- stats-item-1 -->
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-3 col-6">
                         <div class="stats-item text-center">
                             <i class="fa fa-bar-chart"></i>
                             <h3 class="counter">25</h3>
@@ -1037,7 +1076,7 @@
                     </div>
 
                     <!-- stats-item-2 -->
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-3 col-6">
                         <div class="stats-item text-center">
                             <i class="fa fa-codepen"></i>
                             <h3 class="counter">476</h3>
@@ -1046,7 +1085,7 @@
                     </div>
 
                     <!-- stats-item-3 -->
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-3 col-6">
                         <div class="stats-item text-center">
                             <i class="fa fa-trophy"></i>
                             <h3 class="counter">115</h3>
@@ -1055,7 +1094,7 @@
                     </div>
 
                     <!-- stats-item-4 -->
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-3 col-6">
                         <div class="stats-item text-center">
                             <i class="fa fa-users"></i>
                             <h3 class="counter">276</h3>
@@ -1063,6 +1102,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -1075,7 +1115,7 @@
             <div class="container">
 
                 <div class="row">
-                    <div class="col-md-12 text-center">
+                    <div class="col-lg-12 text-center">
                         <div class="horizontal-heading">
                             <h5>Satisfied Clients</h5>
                             <h2>Our Happy <strong>clients</strong></h2>
@@ -1084,37 +1124,44 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-lg-12">
                         <div id="clients-list" class="owl-carousel owl-theme">
 
                             <!-- client-1 -->
                             <div class="client">
                                 <img src="assets/images/client/client-1.png" alt="client" class="img-fluid">
                             </div>
+
                             <!-- client-2 -->
                             <div class="client">
                                 <img src="assets/images/client/client-2.png" alt="client" class="img-fluid">
                             </div>
+
                             <!-- client-3 -->
                             <div class="client">
                                 <img src="assets/images/client/client-3.png" alt="client" class="img-fluid">
                             </div>
+
                             <!-- client-4 -->
                             <div class="client">
                                 <img src="assets/images/client/client-4.png" alt="client" class="img-fluid">
                             </div>
+
                             <!-- client-5 -->
                             <div class="client">
                                 <img src="assets/images/client/client-5.png" alt="client" class="img-fluid">
                             </div>
+
                             <!-- client-6 -->
                             <div class="client">
                                 <img src="assets/images/client/client-6.png" alt="client" class="img-fluid">
                             </div>
+
                             <!-- client-7 -->
                             <div class="client">
                                 <img src="assets/images/client/client-7.png" alt="client" class="img-fluid">
                             </div>
+
                             <!-- client-8 -->
                             <div class="client">
                                 <img src="assets/images/client/client-8.png" alt="client" class="img-fluid">
@@ -1128,14 +1175,13 @@
     </section>
 
 
-
     <!-- blog -->
     <section id="blog">
 
         <div class="content-box-md">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-lg-5 col-md-4">
                         <div id="blog-left">
                             <div class="vertical-heading">
                                 <h5>Latest News</h5>
@@ -1148,23 +1194,24 @@
                         </div>
                     </div>
 
-                    <div class="col-md-7">
+                    <div class="col-lg-7 col-md-8">
                         <div class="row">
 
                             <!-- blog-post-1 -->
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6">
                                 <div class="blog-post">
                                     <h4>Your Post Title</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem porro natus eum atque?</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem porro natus eum
+                                        atque?</p>
                                     <a href="#">Read More</a>
                                     <div class="post-meta">
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-lg-6 col-md-8 col-7">
                                                 <p><img src="assets/images/blog/user-1.jpg" alt="author"
-                                                        class="img-fluid"> Daniel Watrous</p>
+                                                        class="img-fluid"> Dan Watrous</p>
                                             </div>
-                                            <div class="col-md-6">
-                                                <p class="text-right">October 03, 2017</p>
+                                            <div class="col-lg-6 col-md-4 col-5">
+                                                <p class="text-right">October 03,2017</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1172,19 +1219,20 @@
                             </div>
 
                             <!-- blog-post-2 -->
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6">
                                 <div class="blog-post">
                                     <h4>Your Post Title</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem porro natus eum atque?</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem porro natus eum
+                                        atque?</p>
                                     <a href="#">Read More</a>
                                     <div class="post-meta">
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-lg-6 col-md-8 col-7">
                                                 <p><img src="assets/images/blog/user-2.jpg" alt="author"
                                                         class="img-fluid"> Johan Petter</p>
                                             </div>
-                                            <div class="col-md-6">
-                                                <p class="text-right">Novenber 12, 2017</p>
+                                            <div class="col-lg-6 col-md-4 col-5">
+                                                <p class="text-right">Novenber 12,2017</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1200,26 +1248,123 @@
     </section>
 
 
+    <!-- contact -->
+    <section id="contact">
 
- 
+        <div class="content-box-md">
+            <div class="container">
+                <div class="row">
+
+                    <!-- left-side -->
+                    <div class="col-lg-6">
+                        <div id="contact-left">
+                            <div class="vertical-heading">
+                                <h5>Who We Are</h5>
+                                <h2>Get<br>In <strong>Touch</strong></h2>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                repudiandae quasi alias nisi vitae maiores quia dolores magnam quibusdam itaque,
+                                autem explicabo.</p>
+                            <div id="offices">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="office">
+                                            <h4>United States</h4>
+                                            <ul class="office-details">
+                                                <li><i class="fa fa-mobile"></i>(+55) 456 67 54 89</li>
+                                                <li><i class="fa fa-envelope-o"></i>support@solo.com</li>
+                                                <li><i class="fa fa-map-marker"></i><span>524 Mina street Building
+                                                        05<br>California, USA.</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="office">
+                                            <h4>Australia</h4>
+                                            <ul class="office-details">
+                                                <li><i class="fa fa-mobile"></i>(+88) 629 74 59 65</li>
+                                                <li><i class="fa fa-envelope-o"></i>support@solo.com</li>
+                                                <li><i class="fa fa-map-marker"></i><span>456 Manly street Building
+                                                        07<br>Sydney, Australia.</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="social-list">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- right-side -->
+                    <div class="col-lg-6">
+                        <div id="contact-right">
+                            <form action="">
+                                <h4>Send Message</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <div class="row">
+
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Email Address">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="phone" placeholder="Phone No.">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="subject" placeholder="Subject">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea id="message" class="form-control" placeholder="Message"></textarea>
+                                </div>
+
+                                <div id="submit-btn">
+                                    <a class="btn btn-yellow btn-general" href="#" role="button">Submit</a>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
+    <!-- footer -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyrigtht &copy; 2017 All Rights Reserved by <span>SOLO Inc.</span></p>
+                </div>
+            </div>
+        </div>
 
-
-
-
-
-
-
-
-
-
-    <!-- xtraspace -->
-    <section><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br></section>
+        <!-- back2top -->
+        <a href="#home" id="back-to-top" class="btn btn-sm btn-yellow btn-bak-to-top smooth-scroll d-none d-lg-block" role="button">
+            <i class="fa fa-angle-up"></i>
+        </a>
+    </footer>
 
 
     <!-- Scripts -->
@@ -1231,6 +1376,8 @@
     <script src="node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
     <script src="node_modules/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
     <script src="node_modules/jquery.counterup/jquery.counterup.min.js"></script>
+    <script src="node_modules/jquery.easing/jquery.easing.min.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWWGXCl07cmz4zMYCNzMUAAfktsUrMxBE"></script> -->
     <script src="js/scripts.js"></script>
 </body>
 

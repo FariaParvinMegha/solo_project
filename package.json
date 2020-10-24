@@ -22,6 +22,7 @@
     "isotope-layout": "^3.0.6",
     "jquery": "^3.5.1",
     "jquery.counterup": "^2.1.0",
+    "jquery.easing": "^1.4.1",
     "magnific-popup": "^1.1.0",
     "owl-carousel": "^1.0.0",
     "owl.carousel": "^2.3.4",
