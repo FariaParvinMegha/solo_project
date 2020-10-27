@@ -183,6 +183,7 @@ section {
     -o-border-radius: 4px;
     font-size: 22px;
     display: none;
+    z-index: 2;
 }
 
 
@@ -1162,11 +1163,15 @@ footer p span{
 }
 #site-nav-wrapper{
     padding: 0 85px;
+    position: relative;
 }
 .navbar-brand{
     padding: 13px 0;
 }
-ul.navbar-nav .nav-item .nav-link{
+#main-nav{
+    width: 100%;
+}
+ul.nav.navbar-nav .nav-item .nav-link{
     font-family: "Raleway", sans-serif;
     color: #fff;
     font-size: 13px;
@@ -1174,14 +1179,9 @@ ul.navbar-nav .nav-item .nav-link{
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-ul.navbar-nav .nav-item a.nav-link:hover,
-ul.navbar-nav .nav-item a.nav-link:focus{
+ul.nav.navbar-nav .nav-item a.nav-link:hover,
+ul.nav.navbar-nav .nav-item a.nav-link:focus{
     color: #f4c613;
-}
-.navbar-toggler-icon{
-    color: #fff;
-    font-size: 32px;
-    padding: 8px 0;
 }
 
 /* white-navigation */
@@ -1191,10 +1191,11 @@ ul.navbar-nav .nav-item a.nav-link:focus{
     box-shadow: 0 8px 6px -9px #999;
     z-index: 2;
 }
-.white-nav-top ul.navbar-nav .nav-item .nav-link{
+.white-nav-top ul.nav.navbar-nav .nav-item .nav-link{
     color: #212226;
 }
-ul.navbar-nav .nav-item a.nav-link.active{
+ul.nav.navbar-nav .nav-item a.nav-link.active{
     color: #f4c613;
     font-weight: 500;
 }
+

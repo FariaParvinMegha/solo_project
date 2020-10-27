@@ -159,3 +159,16 @@ $(function () {
         }, 1250, "easeInOutExpo");
     });
 });
+
+
+// mobile menu/////////////////////
+$(function () {
+    // show mobile nav //
+    $("#mobile-nav-open-btn").on("click", function () {
+        $("#mobile-nav").css("height", "100%");
+    });
+    // hide mobile nav //
+    $("#mobile-nav-close-btn , #mobile-nav a").on("click", function () {
+        $("#mobile-nav").css("height", "0%");
+    });
+});
