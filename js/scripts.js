@@ -112,7 +112,18 @@ $(function () {
         loop: true,
         autoplayHoverPause: true,
         nav: true,
-        dots: false
+        dots: false,
+        responsive: {
+            0: {
+                items: 2
+            },
+            480: {
+                items: 3
+            },
+            768: {
+                items: 6
+            }
+        }
     });
 });
 

@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- fonts&icons -->
 
     <!-- css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
@@ -36,21 +35,36 @@
     <header>
         <nav class="navbar  navbar-expand-md fixed-top">
             <div class="container-fluid" id="site-nav-wrapper">
-                <!-- logo -->
-                <a href="#home" class="navbar-brand smooth-scroll"><img src="assets/images/logo/logo.png"
-                        alt="logo"></a>
+
+                <!------------------- bootstrap mobile-menu -------------------------->
+                
+                <button class="navbar-toggler" type="button" style="outline: none;" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">&#x2630;</span>
+                </button>
+                <a href="#home" class="navbar-brand smooth-scroll"><img src="assets/images/logo/logo.png" alt="logo"></a>
+                
+                <!----------------------- button ends ------------------------------>
+
+                
+
                 <!-- navigation links -->
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="nav navbar-nav">
-                        <li class="nav-item"><a class="nav-link smooth-scroll" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link smooth-scroll" href="#team">Team</a></li>
-                        <li class="nav-item"><a class="nav-link smooth-scroll" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Work</a></li>
-                        <li class="nav-item"><a class="nav-link smooth-scroll" href="#blog">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
-                    </ul>
+                <div class="container">
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#team">Team</a></li>
+                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#services">Services</a></li>
+                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Work</a></li>
+                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#blog">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
+
+                
             </div>
         </nav>
     </header>
@@ -70,19 +84,20 @@
         <!-- home-content -->
         <div id="home-content">
             <div id="home-content-inner" class="text-center">
+
                 <div id="home-heading">
                     <h1 id="home-heading-1">Digital</h1><br>
                     <h1 id="home-heading-2">Creative<span> Agency</span></h1>
                 </div>
-
                 <div id="home-text">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         Neque distinctio velit, nesciunt provident fuga quae</p>
                 </div>
                 <div id="home-btn">
-                    <a class="btn btn-general btn-home smooth-scroll" role="button" href="#about"
+                    <a class="btn btn-general btn-home smooth-scroll shadow-none" role="button" href="#about"
                         title="Start Now">Start Now</a>
                 </div>
+
             </div>
         </div>
 
@@ -204,9 +219,9 @@
                                 <h5>who we are</h5>
                                 <h2>Meet Our<br><strong>Talented</strong> Team</h2>
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Ad doloribus eligendi natus tenetur maxime recusandae voluptate, 
-                                suscipit, illo quam aperiam harum commodi facere voluptas? 
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ad doloribus eligendi natus tenetur maxime recusandae voluptate,
+                                suscipit, illo quam aperiam harum commodi facere voluptas?
                                 Odio culpa dignissimos natus repudiandae iste.</p>
                         </div>
                     </div>
@@ -282,7 +297,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <!-- member5 -->
                             <div class="team-member">
                                 <img src="assets/images/team/team-5.jpg" alt="team-member" class="img-fluid">
@@ -424,63 +439,63 @@
 
                         <div class="col-lg-5 col-md-5">
 
-                                <!-- service-1 -->
-                                    <div class="service">
-                                        <div class="row">
-                                            <div class="col-lg-2 col-md-2">
-                                                <div class="icon text-right">
-                                                    <i class="fa fa-paint-brush"></i>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-10 col-md-10">
-                                                <h5>Service 01</h5>
-                                                <h4>Web Design</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                    Consectetur exercitationem numquam excepturi?
-                                                    Soluta fuga voluptates voluptatibus repellat iusto corporis.
-                                                </p>
-                                            </div>
+                            <!-- service-1 -->
+                            <div class="service">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-2">
+                                        <div class="icon text-right">
+                                            <i class="fa fa-paint-brush"></i>
                                         </div>
                                     </div>
+                                    <div class="col-lg-10 col-md-10">
+                                        <h5>Service 01</h5>
+                                        <h4>Web Design</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Consectetur exercitationem numquam excepturi?
+                                            Soluta fuga voluptates voluptatibus repellat iusto corporis.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
 
-                                <!-- service-2 -->
-                                    <div class="service">
-                                        <div class="row">
-                                            <div class="col-lg-2 col-md-2">
-                                                <div class="icon text-right">
-                                                    <i class="fa fa-laptop"></i>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-10 col-md-10">
-                                                <h5>Service 02</h5>
-                                                <h4>Web Development</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                    Consectetur exercitationem numquam excepturi?
-                                                    Soluta fuga voluptates voluptatibus repellat iusto corporis.
-                                                </p>
-                                            </div>
+                            <!-- service-2 -->
+                            <div class="service">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-2">
+                                        <div class="icon text-right">
+                                            <i class="fa fa-laptop"></i>
                                         </div>
                                     </div>
+                                    <div class="col-lg-10 col-md-10">
+                                        <h5>Service 02</h5>
+                                        <h4>Web Development</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Consectetur exercitationem numquam excepturi?
+                                            Soluta fuga voluptates voluptatibus repellat iusto corporis.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
 
-                                <!-- service-3 -->
+                            <!-- service-3 -->
 
-                                    <div class="service">
-                                        <div class="row">
-                                            <div class="col-lg-2 col-md-2">
-                                                <div class="icon text-right">
-                                                    <i class="fa fa-paper-plane"></i>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-10 col-md-10">
-                                                <h5>Service 03</h5>
-                                                <h4>Digital Marketing</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                    Consectetur exercitationem numquam excepturi?
-                                                    Soluta fuga voluptates voluptatibus repellat iusto corporis.
-                                                </p>
-                                            </div>
+                            <div class="service">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-2">
+                                        <div class="icon text-right">
+                                            <i class="fa fa-paper-plane"></i>
                                         </div>
                                     </div>
+                                    <div class="col-lg-10 col-md-10">
+                                        <h5>Service 03</h5>
+                                        <h4>Digital Marketing</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Consectetur exercitationem numquam excepturi?
+                                            Soluta fuga voluptates voluptatibus repellat iusto corporis.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -516,7 +531,8 @@
                                             architecto similique tempore exercitationem
                                             odit harum velit nisi maiores? Odio, aspernatur.</p>
                                         <div id="services-2-btn">
-                                            <a class="btn btn-yellow btn-general" href="#services" role="button">Get in
+                                            <a class="btn btn-yellow btn-general shadow-none" href="#services"
+                                                role="button">Get in
                                                 Touch</a>
                                         </div>
                                     </div>
@@ -541,7 +557,8 @@
                                             architecto similique tempore exercitationem
                                             odit harum velit nisi maiores? Odio, aspernatur.</p>
                                         <div id="services-2-btn">
-                                            <a class="btn btn-yellow btn-general" href="#services" role="button">Get in
+                                            <a class="btn btn-yellow btn-general shadow-none" href="#services"
+                                                role="button">Get in
                                                 Touch</a>
                                         </div>
                                     </div>
@@ -566,7 +583,8 @@
                                             architecto similique tempore exercitationem
                                             odit harum velit nisi maiores? Odio, aspernatur.</p>
                                         <div id="services-2-btn">
-                                            <a class="btn btn-yellow btn-general" href="#services" role="button">Get in
+                                            <a class="btn btn-yellow btn-general shadow-none" href="#services"
+                                                role="button">Get in
                                                 Touch</a>
                                         </div>
                                     </div>
@@ -591,7 +609,8 @@
                                             architecto similique tempore exercitationem
                                             odit harum velit nisi maiores? Odio, aspernatur.</p>
                                         <div id="services-2-btn">
-                                            <a class="btn btn-yellow btn-general" href="#services" role="button">Get in
+                                            <a class="btn btn-yellow btn-general shadow-none" href="#services"
+                                                role="button">Get in
                                                 Touch</a>
                                         </div>
                                     </div>
@@ -832,10 +851,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis nam qui,
-                                officiis possimus nostrum aliquam earum veritatis ratione
-                                laboriosam non consectetur maiores.
-                                Aperiam, ipsa ducimus delectus perspiciatis quisquam laudantium nobis?</p>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-12">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis nam qui,
+                                        officiis possimus nostrum aliquam earum veritatis ratione
+                                        laboriosam non consectetur maiores.
+                                        Aperiam, ipsa ducimus delectus perspiciatis quisquam laudantium nobis?</p>
+                                </div>
+                            </div>
                             <div class="author">
                                 <div class="row">
                                     <div class="col-lg-2 col-md-3 col-6">
@@ -868,10 +891,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis nam qui,
-                                officiis possimus nostrum aliquam earum veritatis ratione
-                                laboriosam non consectetur maiores.
-                                Aperiam, ipsa ducimus delectus perspiciatis quisquam laudantium nobis?</p>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-12">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis nam qui,
+                                        officiis possimus nostrum aliquam earum veritatis ratione
+                                        laboriosam non consectetur maiores.
+                                        Aperiam, ipsa ducimus delectus perspiciatis quisquam laudantium nobis?</p>
+                                </div>
+                            </div>
                             <div class="author">
                                 <div class="row">
                                     <div class="col-lg-2 col-md-3  col-6">
@@ -904,10 +931,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis nam qui,
-                                officiis possimus nostrum aliquam earum veritatis ratione
-                                laboriosam non consectetur maiores.
-                                Aperiam, ipsa ducimus delectus perspiciatis quisquam laudantium nobis?</p>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-12">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis nam qui,
+                                        officiis possimus nostrum aliquam earum veritatis ratione
+                                        laboriosam non consectetur maiores.
+                                        Aperiam, ipsa ducimus delectus perspiciatis quisquam laudantium nobis?</p>
+                                </div>
+                            </div>
                             <div class="author">
                                 <div class="row">
                                     <div class="col-lg-2 col-md-3 col-6">
@@ -975,7 +1006,8 @@
                             </ul>
 
                             <div id="pricing-btn">
-                                <a class="btn btn-yellow btn-general" href="#pricing" role="button">Get Started</a>
+                                <a class="btn btn-yellow btn-general shadow-none" href="#pricing" role="button">Get
+                                    Started</a>
                             </div>
                         </div>
                     </div>
@@ -1006,7 +1038,8 @@
                             </ul>
 
                             <div id="pricing-btn">
-                                <a class="btn btn-white btn-general" href="#pricing" role="button">Get Started</a>
+                                <a class="btn btn-white btn-general shadow-none" href="#pricing" role="button">Get
+                                    Started</a>
                             </div>
                         </div>
                     </div>
@@ -1037,7 +1070,8 @@
                             </ul>
 
                             <div id="pricing-btn">
-                                <a class="btn btn-yellow btn-general" href="#pricing" role="button">Get Started</a>
+                                <a class="btn btn-yellow btn-general shadow-none" href="#pricing" role="button">Get
+                                    Started</a>
                             </div>
 
                         </div>
@@ -1200,7 +1234,7 @@
                             <!-- blog-post-1 -->
                             <div class="col-lg-6 col-md-6">
                                 <div class="blog-post">
-                                    <h4>Your Post Title</h4>
+                                    <h4>My Post Title</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem porro natus eum
                                         atque?</p>
                                     <a href="#">Read More</a>
@@ -1221,7 +1255,7 @@
                             <!-- blog-post-2 -->
                             <div class="col-lg-6 col-md-6">
                                 <div class="blog-post">
-                                    <h4>Your Post Title</h4>
+                                    <h4>My Post Title</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem porro natus eum
                                         atque?</p>
                                     <a href="#">Read More</a>
@@ -1302,7 +1336,7 @@
                     <!-- right-side -->
                     <div class="col-lg-6">
                         <div id="contact-right">
-                            <form action="">
+                            <form>
                                 <h4>Send Message</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                 <div class="row">
@@ -1338,7 +1372,7 @@
                                 </div>
 
                                 <div id="submit-btn">
-                                    <a class="btn btn-yellow btn-general" href="#" role="button">Submit</a>
+                                    <a class="btn btn-yellow btn-general shadow-none" href="#" role="button">Submit</a>
                                 </div>
 
                             </form>
@@ -1355,13 +1389,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyrigtht &copy; 2017 All Rights Reserved by <span>SOLO Inc.</span></p>
+                    <p>Copyright &copy; 2017 All Rights Reserved by <span>SOLO Inc.</span></p>
                 </div>
             </div>
         </div>
 
         <!-- back2top -->
-        <a href="#home" id="back-to-top" class="btn btn-sm btn-yellow btn-bak-to-top smooth-scroll d-none d-lg-block" role="button">
+        <a href="#home" id="back-to-top" class="btn btn-sm btn-yellow btn-back-to-top smooth-scroll shadow-none"
+            role="button">
             <i class="fa fa-angle-up"></i>
         </a>
     </footer>

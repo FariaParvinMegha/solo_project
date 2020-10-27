@@ -170,7 +170,7 @@ section {
     background-color: #212226;
     border: 1px solid #212226;
 }
-.btn-bak-to-top{
+.btn-back-to-top{
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -184,6 +184,7 @@ section {
     font-size: 22px;
     display: none;
 }
+
 
 
 
@@ -429,7 +430,9 @@ ul.social-list li:nth-child(3) a:hover {
     background: none;
     color: #212226;
 }
-
+.owl-next:focus, .owl-prev:focus {
+    outline: none;
+}
 
 
 /* Skills */
@@ -791,6 +794,7 @@ ul.social-list li:nth-child(3) a:hover {
 .testimonial h3 {
     font-size: 32px;
     line-height: 35px;
+    margin: 20px 0 10px 0;
 }
 .testimonial .stars {
     font-size: 20px;
@@ -1173,6 +1177,11 @@ ul.navbar-nav .nav-item .nav-link{
 ul.navbar-nav .nav-item a.nav-link:hover,
 ul.navbar-nav .nav-item a.nav-link:focus{
     color: #f4c613;
+}
+.navbar-toggler-icon{
+    color: #fff;
+    font-size: 32px;
+    padding: 8px 0;
 }
 
 /* white-navigation */
