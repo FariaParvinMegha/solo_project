@@ -107,7 +107,7 @@ $(function () {
     $("#clients-list").owlCarousel({
         items: 6,
         autoplay: true,
-        autoplayTimeout: 3000,
+        autoplayTimeout: 2000,
         smartSpeed: 700,
         loop: true,
         autoplayHoverPause: true,
@@ -172,3 +172,17 @@ $(function () {
         $("#mobile-nav").css("height", "0%");
     });
 });
+
+
+// animation ///////////////////
+$(function () {
+    new WOW().init();
+})
+
+$(window).on('load', function(){
+    $("#home-heading-1").addClass("animate__animated animate__fadeInDown delay-1");
+    $("#home-heading-2").addClass("animate__animated animate__fadeInLeft delay-2");
+    $("#home-text").addClass("animate__animated animate__zoomIn delay-3");
+    $("#home-btn").addClass("animate__animated animate__zoomIn delay-4");
+    $("#arrow-down i").addClass("animate__animated animate__fadeInDown animate__infinite delay-5")
+})
